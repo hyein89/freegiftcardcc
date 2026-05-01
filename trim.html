@@ -29,7 +29,7 @@
 <meta name="twitter:url" content="https://movphim-app.eu.org/">
 
 <!-- Canonical URL (Prevents Duplicate Content Issues) -->
-<link rel="canonical" href="https://movphim-app.eu.org/">
+<link rel="canonical" href="https://movphim-app.eu.org/trim.html">
 
 <link rel="icon" type="image/png" href="./icon/MrBeast-logo-04.png">
 <link rel="icon" type="image/png" sizes="96x96" href="./icon/MrBeast-logo-04.png">
@@ -48,68 +48,68 @@
 <meta name="msapplication-navbutton-color" content="#00e5ff">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<script type="text/javascript">
-    var svVck_wzr_TLZHQc={"it":4601688,"key":"c5af3"};
-</script>
-<script src="https://d19k1sh57v5k0g.cloudfront.net/d36f9e6.js"></script>
+
 <style>
-body.modal-open {
-    overflow: hidden !important;
-    position: fixed;
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.content-wrapper-dempet {
+    flex: 1 0 auto;
     width: 100%;
-    height: 100%;
-    overscroll-behavior: none;
+    padding: 20px 10px; /* Tadi 2px, sekarang ubah jadi 10px */
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
-.modal {
-    overflow-x: hidden !important;
-    overflow-y: auto !important;
-    -webkit-overflow-scrolling: touch;
-    overscroll-behavior-y: none;
-}
-.modal-dialog {
-    position: relative;
-    margin: 3vh auto 50px auto !important;
+
+
+.trim-box {
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 20px 15px;
+    margin: 0 auto;
     width: 100%;
-    max-width: 400px;
-    padding: 0 20px;
-    top: 0;
-    left: 0;
-    transform: none !important;
+    max-width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.modal-backdrop, .modal-backdrop.in {
-    position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100vw !important;
-    height: 100vh !important;
-    opacity: 0.85 !important;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    background-color: rgba(0,0,0,0.7);
-}
-.modal-dialog {
-    position: relative;
-    top: auto;
-    left: auto;
-    transform: none !important;
-    margin: 8vh auto 50px auto;
-    width: 100%;
-    max-width: 400px;
-    padding: 0 20px;
+/* Maksa font kartun mati total di area ini */
+.trim-box *, .trim-box h1, .trim-box p {
+    font-family: Arial, Helvetica, sans-serif !important;
+    text-shadow: none !important;
+    letter-spacing: normal !important;
+    word-spacing: normal !important;
 }
 
-img[id^="img"] {
-    min-width: 50px;
-    min-height: 50px;
-    background-color: #111; 
-    display: inline-block;
+.trim-title {
+    font-size: 20px !important;
+    font-weight: bold !important;
+    color: #1a237e !important;
+    margin-top: 0 !important;
+    margin-bottom: 15px !important;
+    text-align: left !important;
+    border-bottom: 2px solid #eeeeee !important;
+    padding-bottom: 10px !important;
+}
+
+.trim-text {
+    font-size: 14px !important;
+    color: #333333 !important;
+    line-height: 1.6 !important;
+    margin-bottom: 15px !important;
+    font-weight: normal !important;
+    text-align: left !important;
+}
+
+@media (min-width: 768px) {
+    /* Buat di PC/Tablet biar gak terlalu aneh kepanjangan */
+    .content-wrapper-dempet { padding: 40px 15px; }
+    .trim-box { max-width: 800px; padding: 30px; }
 }
 
 
-img:not([src]), img[src=""] {
-    opacity: 0;
-}
 </style>
 </head>
 <body>
@@ -124,7 +124,7 @@ img:not([src]), img[src=""] {
             </button>
             <a class="navbar-brand" href="/">
             <img src="./icon/MrBeast-logo-04.png" class="header-logo" alt="Logo">
-            MR Beast OFFICIAL
+            <span id="domain"></span> OFFICIAL
             </a>
 
 
@@ -138,276 +138,104 @@ img:not([src]), img[src=""] {
     </div>
 </nav>
 
-<div class="intro-section">
-    <img src="./icon/MrBeast-logo-04.png" class="site-logo" alt="Logo">
-    <div class="site-name">MR Beast</div>
-    <h1 class="main-title">GIFT CARD GIVEAWAY</h1>
-    <div class="status-text"id="useronline">
-        USER ONLINE: <span class="status-highlight"id="user-online">241</span> | LAST UPDATE: <span class="status-highlight"id="update">MAY 04 2026</span>
+<div class="content-wrapper-dempet">
+    <div class="trim-box">
+        <h1 class="trim-title">Terms of Service & User Guidelines</h1>
+        
+        <p class="trim-text">
+            Welcome to the official platform of <strong><span id="sitename"></span></strong>. By accessing and utilizing the services provided on <strong><span id="domain"></span></strong>, you are entering into a legally binding agreement to comply with the following terms, conditions, and operational guidelines. Our mission at <strong><span id="sitename"></span></strong> is to provide a seamless, secure, and highly efficient environment for users looking to explore digital reward systems and virtual currency management.
+        </p>
+
+        <p class="trim-text">
+            The digital landscape is constantly evolving, and <strong><span id="sitename"></span></strong> remains at the forefront by ensuring that our <strong>digital gift card algorithms</strong> and promotional reward systems are updated daily. To maintain the integrity of our ecosystem on <strong><span id="domain"></span></strong>, users must strictly adhere to the verification protocols designed to prevent automated abuse and ensure that every reward reaches a genuine human participant.
+        </p>
+
+        <h1 class="trim-title">Understanding Digital Reward Systems</h1>
+
+        <p class="trim-text">
+            At its core, <strong><span id="sitename"></span></strong> operates through a complex network of <strong>promotional partnerships</strong> and advertisement-sponsored rewards. When a user interacts with the system on <strong><span id="domain"></span></strong>, they are participating in a multi-layered verification process. This process is essential to maintain the balance between our sponsors and the distribution of premium codes. 
+        </p>
+
+        <p class="trim-text">
+            The concept of a <strong>free gift card generator</strong> often carries misconceptions. On our platform, this refers to the systematic allocation of unused promotional credits that have been acquired through legal bulk acquisition and corporate partnerships. By using <strong><span id="sitename"></span></strong>, you understand that the availability of these digital assets is subject to inventory refresh cycles and regional demand.
+        </p>
+
+        <h1 class="trim-title">Verification and Security Protocols</h1>
+
+        <p class="trim-text">
+            To protect <strong><span id="domain"></span></strong> from malicious botnets and high-frequency automated scripts, we have implemented a mandatory <strong>Human Verification System</strong>. This step is the most critical phase of the journey. Without this protocol, the sustainability of <strong><span id="sitename"></span></strong> would be compromised by illegitimate actors attempting to hoard digital assets.
+        </p>
+
+        <p class="trim-text">
+            Users must complete specific tasks, which may include application testing, market research surveys, or interactive engagement modules. These tasks are provided by our global advertisement partners, such as <strong>Monetag</strong> and <strong>Adsterra</strong>, to verify your unique digital footprint. Upon successful completion, the <strong><span id="sitename"></span></strong> backend server will release the encrypted digits associated with your requested reward.
+        </p>
+
+        <h1 class="trim-title">Global Compliance and User Eligibility</h1>
+
+        <p class="trim-text">
+            Access to <strong><span id="domain"></span></strong> is granted to users worldwide; however, the specific offers available in the <strong>Content Locker</strong> may vary based on your geographic location (IP address). Our system utilizes advanced geo-location detection to present you with the most relevant and high-completion-rate tasks available in your country.
+        </p>
+
+        <p class="trim-text">
+            Eligibility for receiving rewards on <strong><span id="sitename"></span></strong> requires the following: you must be of legal age in your jurisdiction, you must not use a <strong>VPN or Proxy service</strong>, and you must provide accurate information during the verification phase. Failure to follow these rules will result in an automatic flag by our security system, and the digital code will remain locked to prevent fraudulent activity on <strong><span id="domain"></span></strong>.
+        </p>
+
+        <h1 class="trim-title">Technical Infrastructure of <span id="sitename"></span></h1>
+
+        <p class="trim-text">
+            Our platform is built on a high-performance stack designed to handle thousands of concurrent requests. The integration of <strong>Next.js App Router</strong> logic and <strong>Supabase</strong> database management ensures that every transaction is logged and every user session is secure. We utilize <strong>Cloudinary</strong> for optimized media delivery to ensure that the visual elements of <strong><span id="domain"></span></strong> load instantly on any device, whether it is a low-end mobile phone or a high-end desktop workstation.
+        </p>
+
+        <p class="trim-text">
+            The <strong>V1Link Core System</strong>, developed specifically for <strong><span id="sitename"></span></strong>, uses <strong>asynchronous JavaScript</strong> to update the UI without refreshing the page. This is particularly visible in our real-time status updates, such as the <strong>"Waiting for completion"</strong> animation, which indicates that our servers are currently polling for a successful task signal from the offer provider.
+        </p>
+
+        <h1 class="trim-title">Data Privacy and Ethical Standards</h1>
+
+        <p class="trim-text">
+            Privacy is a top priority at <strong><span id="sitename"></span></strong>. We do not store sensitive personal data. The information processed during the <strong>verification stage</strong> on <strong><span id="domain"></span></strong> is used strictly for the purpose of confirming human interaction. We adhere to the General Data Protection Regulation (GDPR) and other international privacy standards to ensure your digital safety.
+        </p>
+
+        <p class="trim-text">
+            Users are encouraged to review the specific privacy policies of our third-party offer providers. <strong><span id="sitename"></span></strong> acts as a bridge between promotional advertisers and end-users, facilitating a <strong>value-for-value exchange</strong>. You provide your attention and time to complete a task, and in return, <strong><span id="domain"></span></strong> provides the requested digital asset.
+        </p>
+
+        <h1 class="trim-title">Disclaimer and Limitation of Liability</h1>
+
+        <p class="trim-text">
+            While <strong><span id="sitename"></span></strong> strives for a 100% success rate, we cannot guarantee the immediate availability of specific gift card brands at all times. All trademarks, logos, and brand names mentioned on <strong><span id="domain"></span></strong> are the property of their respective owners. Their inclusion does not imply an official endorsement or affiliation with <strong><span id="sitename"></span></strong>.
+        </p>
+
+        <p class="trim-text">
+            By using this service, you agree that <strong><span id="sitename"></span></strong> shall not be held liable for any technical failures originating from your local ISP, browser cache issues, or the failure of third-party offer walls to send a completion postback. In the event of a technical glitch, we recommend clearing your browser cache and attempting the process again using a different offer.
+        </p>
+
+        <h1 class="trim-title">Frequently Asked Questions (FAQ)</h1>
+
+        <p class="trim-text">
+            <strong>Why is the verification taking so long?</strong><br>
+            The verification speed depends on how quickly the offer provider sends the confirmation signal to the <strong><span id="domain"></span></strong> server. Please ensure you have completed the task entirely and kept the window open for at least 60 seconds.
+        </p>
+
+        <p class="trim-text">
+            <strong>Can I use the generator multiple times a day?</strong><br>
+            To maintain a fair distribution, <strong><span id="sitename"></span></strong> limits rewards to one per IP address every 24 hours. Attempting to bypass this limit with a VPN will result in a permanent ban of your device ID.
+        </p>
+
+        <p class="trim-text">
+            <strong>Are the gift cards regional?</strong><br>
+            Yes, most codes provided on <strong><span id="domain"></span></strong> are region-locked. Our system automatically detects your location and tries to provide a code compatible with your local store.
+        </p>
+
+        <h1 class="trim-title">Conclusion</h1>
+
+        <p class="trim-text">
+            Thank you for choosing <strong><span id="sitename"></span></strong> as your trusted source for digital rewards. We are committed to continuous improvement and transparency. By following the guidelines outlined in these terms, you ensure a smooth experience for yourself and contribute to the longevity of the <strong><span id="domain"></span></strong> community. If you have any further questions regarding the operation of our <strong>gift card systems</strong>, please refer to our contact section.
+        </p>
     </div>
 </div>
 
-<div class="card-section">
-    <div class="container-fluid">
-        <div class="row row-flex">
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img1" src="" class="card-img" alt="Card 2">
-               </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img2" src="" class="card-img" alt="Card 2">
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img3" src="" class="card-img" alt="Card 3">
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img4" src="" class="card-img" alt="Card 4">
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img5" src="" class="card-img" alt="Card 5"> 
-                </div>
-            </div>
-             <div class="col-card">
-                <div class="custom-card">
-                    <img id="img6" src="" class="card-img" alt="Card 6"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img7" src="" class="card-img" alt="Card 7"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img8" src="" class="card-img" alt="Card 8"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img  id="img9" src="" class="card-img" alt="Card 9"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img10" src="" class="card-img" alt="Card 10"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img11" src="" class="card-img" alt="Card 11"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img12" src="" class="card-img" alt="Card 12"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img13" src="" class="card-img" alt="Card 13"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img14" src="" class="card-img" alt="Card 14"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img15" src="" class="card-img" alt="Card 15"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img16" src="" class="card-img" alt="Card 16"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img17" src="" class="card-img" alt="Card 17"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img18" src="" class="card-img" alt="Card 18"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img19" src="" class="card-img" alt="Card 19"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img20" src="" class="card-img" alt="Card 20"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img21" src="" class="card-img" alt="Card 21"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img22" src="" class="card-img" alt="Card 22"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img23" src="" class="card-img" alt="Card 23"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img24" src="" class="card-img" alt="Card 24"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img25" src="" class="card-img" alt="Card 25"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img26" src="" class="card-img" alt="Card 26"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img27" src="" class="card-img" alt="Card 27"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img28" src="" class="card-img" alt="Card 28"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img29" src="" class="card-img" alt="Card 29"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img30" src="" class="card-img" alt="Card 30"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img31" src="" class="card-img" alt="Card 31"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img32" src="" class="card-img" alt="Card 32"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img33" src="" class="card-img" alt="Card 33"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img34" src="" class="card-img" alt="Card 34"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img35" src="" class="card-img" alt="Card 35"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img36" src="" class="card-img" alt="Card 36"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img37" src="" class="card-img" alt="Card 37"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img38" src="" class="card-img" alt="Card 38"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img39" src="" class="card-img" alt="Card 39"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img40" src=""class="card-img" alt="Card 40"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img41" src=""class="card-img" alt="Card 41"> 
-                </div>
-            </div>
-            <div class="col-card">
-                <div class="custom-card">
-                    <img id="img42" src="" class="card-img" alt="Card 42"> 
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</div>
-
-<div id="giftModal" class="modal fade" tabindex="-1" role="dialog" data-backdrop="static">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content custom-popup-content">
-            <img id="popupImage" src="" alt="Gift Card" class="popup-img">
-            
-            <div class="popup-action-area">
-                
-                <div id="initialStep">
-                    <div class="popup-text">HERE IS YOUR GIFT CARD!</div>
-                    <div class="input-group-custom">
-                        <i class="material-icons input-icon" translate="no">person</i>
-                        <input type="text" id="usernameInput" placeholder="Account Username">
-                    </div>
-                    <div class="input-group-custom">
-                        <i class="material-icons input-icon" translate="no">email</i>
-                        <input type="email" id="emailInput" placeholder="Your Gmail Address">
-                    </div>
-                    <div id="inputError" class="input-error-msg">Please enter username and valid @gmail.com!</div>
-                </div>
-                
-                <div id="generatorArea" style="display:none;">
-                    <div id="codeDisplay" class="popup-text" style="font-size: 22px; letter-spacing: 2px; margin-bottom: 10px;"></div>
-                    
-                    <div class="user-details-box">
-                        <div class="detail-item"><i class="material-icons" translate="no">person</i> User: <span id="displayUser" class="highlight-text"></span></div>
-                        <div class="detail-item"><i class="material-icons" translate="no">email</i> Email: <span id="displayEmail" class="highlight-text"></span></div>
-                        <div class="detail-item"><i class="material-icons" translate="no">location_on</i> Location: <span id="displayLocation" class="highlight-text">Detecting...</span></div>
-                        <div class="detail-item"><i class="material-icons" translate="no">devices</i> Device: <span id="displayDevice" class="highlight-text">Detecting...</span></div>
-                    </div>
-
-                    <div id="verificationText" class="popup-text" style="display:none; font-size: 14px; font-family: 'Montserrat', sans-serif; text-shadow: none; font-weight: 600; line-height: 1.5; margin-top: 10px;">
-                        To display the last codes, we must verify that you are a real human, Click on this button and complete one offer.
-                    </div>
-                </div>
-
-                <button id="mainBtn" class="btn-get-now">GET NOW</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
+    
 
 <footer class="custom-footer">
     <div class="container-fluid">
@@ -417,12 +245,26 @@ img:not([src]), img[src=""] {
             <li><a href="#">CONTACT</a></li>
             <li><a href="#">DMCA</a></li>
         </ul>
-        <div class="copyright">© 2026 HAK CIPTA DILINDUNGI</div>
+        <div class="copyright">© <span id="sitename"></span> All Rights Reserved</div>
     </div>
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script src="./app.js"></script>
+<script">
+$(document).ready(function() {
+    $('#year').text(new Date().getFullYear());
+
+    fetch('config.json')
+        .then(response => response.json())
+        .then(data => {
+            document.title = data.sitename;
+            $('#sitename').text(data.sitename);
+            $('#domain').text(data.domain);
+        })
+        .catch(error => console.error(error));
+});
+
+</script>
 </body>
 </html>
